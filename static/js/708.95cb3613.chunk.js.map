@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/708.95cb3613.chunk.js","mappings":"2JAQA,UARiB,WACf,OACE,+BACE,eAAIA,MAAO,CAAEC,UAAW,UAAxB","sources":["views/HomeView.jsx"],"sourcesContent":["const HomeView = () => {\n  return (\n    <>\n      <h1 style={{ textAlign: 'center' }}>Create Your Book</h1>\n    </>\n  );\n};\n\nexport default HomeView;\n"],"names":["style","textAlign"],"sourceRoot":""}

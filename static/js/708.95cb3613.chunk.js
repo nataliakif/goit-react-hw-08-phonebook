@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[708],{1708:function(e,t,r){r.r(t);var n=r(184);t.default=function(){return(0,n.jsx)(n.Fragment,{children:(0,n.jsx)("h1",{style:{textAlign:"center"},children:"Create Your Book"})})}}}]);
+//# sourceMappingURL=708.95cb3613.chunk.js.map
