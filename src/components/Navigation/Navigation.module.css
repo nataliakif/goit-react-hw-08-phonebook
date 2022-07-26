@@ -1,0 +1,20 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 20px;
+  font-weight: bolt;
+  font-size: 18px;
+  line-height: 1.17;
+  color: rgb(62, 39, 83);
+  opacity: 1;
+}
+.link:hover {
+  opacity: 0.6;
+}
+.activeLink {
+  composes: link;
+  color: #fff;
+}
+.activeLink:hover {
+  opacity: 0.6;
+}

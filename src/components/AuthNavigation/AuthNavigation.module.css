@@ -1,0 +1,23 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 15px;
+  margin: 15px;
+  font-weight: bolt;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #000;
+  opacity: 1;
+}
+.link:hover {
+  opacity: 0.6;
+}
+.activeLink {
+  composes: link;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.activeLink:hover {
+  opacity: 0.6;
+}

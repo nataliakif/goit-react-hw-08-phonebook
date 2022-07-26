@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2a363b;
+  margin-bottom: 15px;
+  background-color: rgb(144, 92, 194);
+  color: #fff;
+}
+/* .InputForm__button:hover {
+  background-color: rgb(62, 39, 83);
+} */
