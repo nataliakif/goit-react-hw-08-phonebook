@@ -21,6 +21,7 @@ const Contacts = () => {
   const contacts = useSelector(state =>
     filteredContacts(state.contacts.items, state.contacts.filter)
   );
+
   return (
     <>
       {contacts.length > 0 && (
@@ -32,7 +33,7 @@ const Contacts = () => {
               <button
                 className={styles['Contacts__button']}
                 type="button"
-                onClick={() => dispatch(deleteContact(id))}
+                onClick={id => dispatch(deleteContact(id))}
               >
                 Delete
               </button>

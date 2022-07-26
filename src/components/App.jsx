@@ -16,14 +16,13 @@ const ContactsView = lazy(() => import('../views/ContactsView'));
 function App() {
   const dispatch = useDispatch();
   const isRefreshCurrentUser = useSelector(authSelectors.isRefreshUserData);
-  console.log(isRefreshCurrentUser);
   useEffect(() => {
     dispatch(authOperations.refreshCurrentUser());
   }, [dispatch]);
   return (
-    !isRefreshCurrentUser && (
-      <>
-        <AppBar />
+    <>
+      <AppBar />
+      {!isRefreshCurrentUser && (
         <Suspense fallback={<p>Loading...</p>}>
           <Routes>
             <Route
@@ -61,8 +60,8 @@ function App() {
             />
           </Routes>
         </Suspense>
-      </>
-    )
+      )}
+    </>
   );
 }
 
