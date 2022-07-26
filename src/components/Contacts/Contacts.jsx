@@ -21,10 +21,7 @@ const Contacts = () => {
   const contacts = useSelector(state =>
     filteredContacts(state.contacts.items, state.contacts.filter)
   );
-  const handleDelete = id => {
-    console.log(id);
-    dispatch(deleteContact(id));
-  };
+
   return (
     <>
       {contacts.length > 0 && (
@@ -36,7 +33,7 @@ const Contacts = () => {
               <button
                 className={styles['Contacts__button']}
                 type="button"
-                onClick={handleDelete}
+                onClick={() => dispatch(deleteContact(id))}
               >
                 Delete
               </button>
