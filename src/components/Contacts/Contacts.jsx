@@ -18,13 +18,14 @@ const Contacts = () => {
       return contact.name.toLowerCase().includes(lowerCase);
     });
   };
+
   const contacts = useSelector(state =>
     filteredContacts(state.contacts.items, state.contacts.filter)
   );
 
   return (
     <>
-      {contacts.length > 0 && (
+      {contacts && (
         <ul className={styles['Contacts__list']}>
           {contacts.map(({ name, number, id }) => (
             <li className={styles['Contacts__item']} key={id}>
@@ -33,7 +34,10 @@ const Contacts = () => {
               <button
                 className={styles['Contacts__button']}
                 type="button"
-                onClick={() => dispatch(deleteContact(id))}
+                onClick={() => {
+                  dispatch(deleteContact(id));
+                  console.log(id);
+                }}
               >
                 Delete
               </button>

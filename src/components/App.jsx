@@ -27,7 +27,7 @@ function App() {
           <Routes>
             <Route
               exact
-              path="/goit-react-hw-08-phonebook"
+              path="/"
               element={
                 <PublicRoute>
                   <HomeView />
